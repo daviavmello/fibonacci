@@ -1,0 +1,58 @@
+body {
+  background-color: #f3f5f7;
+  color: #121212;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  margin: 40px 40px;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.card .info h3 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.card .info .subtitle {
+  margin-top: 5px;
+  color: #aaa;
+  font-weight: 300;
+}
+
+.legend {
+  margin-bottom: 40px;
+}
+
+.legend p {
+  display: inline;
+  padding-left: 10px;
+  color: #aaa;
+}
+
+.iterative {
+  margin-left: 20px;
+  background-color: rgba(151, 135, 255, 0.8);
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.recursive {
+  background-color: rgba(255, 135, 135, 0.8);
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
