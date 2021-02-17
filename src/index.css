@@ -93,11 +93,11 @@ pre {
 }
 
 /* code */
-.sc-gsTCUz {
+/* .sc-gsTCUz {
   font-family: Consolas,"courier new";
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
-}
+} */
 
 /* Mobile */
 @media (min-width: 0px) and (max-width: 767px) {
@@ -126,9 +126,9 @@ pre {
     background-color: #1a1a1a
   }
 
-  .sc-gsTCUz {
+  /* .sc-gsTCUz {
     box-shadow: 0 0 20px rgba(94, 94, 94, 0.3);
-  }
+  } */
 }
 
 /* Tablet */
