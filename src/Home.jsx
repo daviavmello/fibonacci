@@ -84,7 +84,7 @@ export const Home = () => {
         text={recursive}
         language="javascript"
         codeBlock
-        theme={github}
+        theme={toggleCodeTheme}
         showLineNumbers={false}
       />
 
