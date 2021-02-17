@@ -81,9 +81,9 @@ export const Home = () => {
       </p>
       <h3>Recursive method</h3>
       <CopyBlock
-        language="js"
         text={recursive}
-        codeBlock={true}
+        language="js"
+        codeBlock
         theme={toggleCodeTheme}
         showLineNumbers={false}
       />
@@ -105,7 +105,7 @@ export const Home = () => {
       <CopyBlock
         language="js"
         text={iterative}
-        codeBlock={true}
+        codeBlock
         theme={toggleCodeTheme}
         showLineNumbers={false}
       />
