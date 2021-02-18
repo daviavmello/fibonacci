@@ -126,7 +126,8 @@ pre {
     background-color: #1a1a1a
   }
 
-  .sc-gsTCUz {
+  .sc-gsTCUz, .fjrsvG {
+    font-size: 10px;
     box-shadow: 0 0 20px rgba(94, 94, 94, 0.3);
   }
 }
