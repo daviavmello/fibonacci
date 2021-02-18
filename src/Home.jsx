@@ -1,8 +1,8 @@
 import { Line } from "react-chartjs-2";
 import { CopyBlock, github, hybrid } from "react-code-blocks";
 
-import { iterativeArr, iterative } from "./Iterative";
-import { recursiveArr, recursive } from "./Recursive";
+import { iterativeArr} from "./Iterative";
+import { recursiveArr } from "./Recursive";
 
 export const Home = () => {
   const fibonacci = (canvas) => {
