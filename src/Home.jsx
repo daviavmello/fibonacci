@@ -16,7 +16,6 @@ export const Home = () => {
     gradientRed.addColorStop(0, "rgba(255, 85, 184, 0.9)");
     gradientRed.addColorStop(1, "rgba(255, 135, 135, 0.8)");
 
-
     return {
       labels: ["1", "5", "10", "50", "100", "500", "1000", "5000", "8000"],
       datasets: [
@@ -51,6 +50,9 @@ export const Home = () => {
     };
   };
 
+  const iterativeToString = String(iterative);
+  const recursiveToString = String(iterative);
+
   const hideLabels = (window.innerWidth) < 1000 ? false : true;
   const toggleCodeTheme = (window.innerWidth) < 1000 ? hybrid : github;
   return (
@@ -81,7 +83,7 @@ export const Home = () => {
       </p>
       <h3>Recursive method</h3>
       <CopyBlock
-        text={recursive}
+        text={recursiveToString}
         language="javascript"
         codeBlock
         theme={toggleCodeTheme}
@@ -104,7 +106,7 @@ export const Home = () => {
       <h3>Iterative method</h3>
       <CopyBlock
         language="javascript"
-        text={iterative}
+        text={iterativeToString}
         codeBlock
         theme={toggleCodeTheme}
         showLineNumbers={false}
