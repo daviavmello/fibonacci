@@ -50,9 +50,6 @@ export const Home = () => {
     };
   };
 
-  const iterativeToString = JSON.stringify(iterative);
-  const recursiveToString = JSON.stringify(recursive);
-
   const hideLabels = (window.innerWidth) < 768 ? false : true;
   const toggleCodeTheme = (window.innerWidth) < 1000 ? hybrid : github;
   return (
@@ -83,7 +80,7 @@ export const Home = () => {
       </p>
       <h3>Recursive method</h3>
       <CopyBlock
-        text={recursiveToString}
+        text={recursive}
         language="javascript"
         codeBlock
         theme={toggleCodeTheme}
@@ -106,7 +103,7 @@ export const Home = () => {
       <h3>Iterative method</h3>
       <CopyBlock
         language="javascript"
-        text={iterativeToString}
+        text={iterative}
         codeBlock
         theme={toggleCodeTheme}
         showLineNumbers={false}
