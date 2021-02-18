@@ -50,10 +50,10 @@ export const Home = () => {
     };
   };
 
-  const iterativeToString = String(iterative);
-  const recursiveToString = String(recursive);
+  const iterativeToString = JSON.stringify(iterative);
+  const recursiveToString = JSON.stringify(recursive);
 
-  const hideLabels = (window.innerWidth) < 1000 ? false : true;
+  const hideLabels = (window.innerWidth) < 768 ? false : true;
   const toggleCodeTheme = (window.innerWidth) < 1000 ? hybrid : github;
   return (
     <div>
