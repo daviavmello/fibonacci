@@ -51,7 +51,7 @@ export const Home = () => {
   };
 
   const iterativeToString = String(iterative);
-  const recursiveToString = String(iterative);
+  const recursiveToString = String(recursive);
 
   const hideLabels = (window.innerWidth) < 1000 ? false : true;
   const toggleCodeTheme = (window.innerWidth) < 1000 ? hybrid : github;
