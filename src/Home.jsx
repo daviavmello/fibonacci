@@ -80,7 +80,24 @@ export const Home = () => {
       </p>
       <h3>Recursive method</h3>
       <CopyBlock
-        text={recursive}
+        text={`let arr = [0, 1];
+        export const recursive = (arrLength) => {
+          const t0 = performance.now();
+          let firstNum = arr[arr.length - 2];
+          let secondNum = arr[arr.length - 1];
+        
+          let nNum = firstNum + secondNum;
+          arr.push(nNum);
+          firstNum = secondNum;
+          secondNum = nNum;
+        
+          if (arr.length < arrLength) {
+            recursive(arrLength);
+          }
+          const t1 = performance.now();
+          return (t1 - t0) * 1000;
+        }
+        }
         language="javascript"
         codeBlock
         theme={toggleCodeTheme}
@@ -103,7 +120,17 @@ export const Home = () => {
       <h3>Iterative method</h3>
       <CopyBlock
         language="javascript"
-        text={iterative}
+        text={`export const iterative = (arrLength) => {
+          const t0 = performance.now();
+          let arr = [0, 1];
+        
+          for (let i = arr.length; i < arrLength; i++) {
+            let nNum = arr[arr.length - 1] + arr[arr.length - 2];
+            arr.push(nNum);
+          }
+          const t1 = performance.now();
+          return (t1 - t0) * 1000;
+        }`}
         codeBlock
         theme={toggleCodeTheme}
         showLineNumbers={false}
