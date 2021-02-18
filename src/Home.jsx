@@ -50,8 +50,8 @@ export const Home = () => {
     };
   };
 
-  const hideLabels = (window.innerWidth) < 768 ? false : true;
-  const toggleCodeTheme = (window.innerWidth) < 1000 ? hybrid : github;
+  const hideLabels = window.innerWidth < 768 ? false : true;
+  const toggleCodeTheme = window.innerWidth < 1000 ? hybrid : github;
   return (
     <div>
       <h1>The Fibonacci algorithm</h1>
@@ -97,7 +97,7 @@ export const Home = () => {
           const t1 = performance.now();
           return (t1 - t0) * 1000;
         }
-        }
+        `}
         language="javascript"
         codeBlock
         theme={toggleCodeTheme}
@@ -109,7 +109,8 @@ export const Home = () => {
         may consider this a bad implementation for nth Fibonacci number.
       </p>
       <pre className="numbers">
-        T<sub>n</sub> = T<sub>n-1</sub> + T<sub>n-2</sub>, which is exponential. The time complexity in this case is O(2<sup>n</sup>)
+        T<sub>n</sub> = T<sub>n-1</sub> + T<sub>n-2</sub>, which is exponential.
+        The time complexity in this case is O(2<sup>n</sup>)
       </pre>
       <p>
         It is possible to avoid the recursion by storing the Fibonacci numbers
@@ -145,7 +146,9 @@ export const Home = () => {
       </p>
       <div className="card">
         <div className="info">
-          <h3 className="cardH3">Iterative vs Recursive with Fibonacci Algorithm</h3>
+          <h3 className="cardH3">
+            Iterative vs Recursive with Fibonacci Algorithm
+          </h3>
           <p className="subtitle">(Nth Element, Time in Nanoseconds)</p>
           <div className="legend">
             <span className="recursive"></span>
@@ -167,7 +170,7 @@ export const Home = () => {
                       color: "#f4f4f4",
                       zeroLineColor: "#f4f4f4",
                       display: true,
-                    }
+                    },
                   },
                 ],
                 yAxes: [
