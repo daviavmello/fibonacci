@@ -22,16 +22,5 @@ export const iterativeArr = [
   iterative(8000),
 ];
 
-console.log(iterativeArr);
-
-console.log(`iterativeArr = [
-  iterative(1): ${iterative(1)},
-  iterative(5): ${iterative(5)},
-  iterative(10): ${iterative(10)},
-  iterative(50): ${iterative(50)},
-  iterative(100): ${iterative(100)},
-  iterative(500): ${iterative(500)},
-  iterative(1000): ${iterative(1000)},
-  iterative(5000): ${iterative(5000)},
-  iterative(8000): ${iterative(8000)} ]`);
+console.log(`iterativeArr: ${iterativeArr}`);
   
