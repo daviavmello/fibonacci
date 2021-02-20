@@ -7,7 +7,7 @@ export const iterative = (arrLength) => {
     arr.push(nNum);
   }
   const t1 = performance.now();
-  return (t1 - t0) * 1000;
+  return (t1 - t0) * 1000000;
 }
 
 export const iterativeArr = [
